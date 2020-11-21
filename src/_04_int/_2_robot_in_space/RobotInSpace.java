@@ -28,15 +28,26 @@ public class RobotInSpace implements KeyEventDispatcher {
 	private void moveRobot(int keyPressed) throws InterruptedException {
 		// 2. Print out the keyPressed variable and write down the numbers for
 		// each arrow key
-
-		// 3. If the up arrow is pressed, move the Robot up the screen.
-
+System.out.println(keyPressed);
+if (38 == keyPressed) {
+	rob.setAngle(1);
+	rob.microMove(1);
+}
 		// 4. If the down arrow is pressed, move the Robot down.
-
+if (40 == keyPressed) {
+	rob.setAngle(180);
+	rob.microMove(1);
+}
 		// 5. If the left arrow is pressed, make the Robot go left.
-
+if (37 == keyPressed) {
+	rob.setAngle(270);
+	rob.microMove(1);
+}
 		// 6. If right is pressed, move the Robot right.
-
+if (39 == keyPressed) {
+	rob.setAngle(90);
+	rob.microMove(1);
+}
 		// 7. Run your program and move the Robot to R2-D2 for a surprise!
 	}
 
