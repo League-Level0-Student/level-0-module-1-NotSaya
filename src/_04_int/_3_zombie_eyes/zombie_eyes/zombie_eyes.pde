@@ -9,16 +9,21 @@ void draw() {
   fill(#FF0000);
 ellipse(350,154,100,80);
 ellipse(143, 168, 90, 80);
+
+if( mouseX > 300 && mouseX < 400 ) {
+  if(mouseY > 100 && mouseY < 200){
+    fill(#27B2B1);
+  ellipse(350,154,100,80);
+  }
+}
+if (mouseX > 90 && mouseX < 190){
+  if(mouseY > 110 && mouseY < 210){
+    fill(#27B2B1);
+    ellipse(143, 168, 90, 80);
+  }
+}
 fill(#010101);
 ellipse(350,154, 25, 20);
+ ellipse(143, 168, 18, 16);
 
-
-if( mouseX > 140 && mouseX < 147 ) {
-  if(mouseY < 175 && mouseY > 165) {
-    fill(#27B2B1);
-  ellipse(143, 168, 18, 16);
-} else {
-  ellipse(143, 168, 18, 16);
-}
-}
 }
